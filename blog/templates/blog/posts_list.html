@@ -1,0 +1,9 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+{% for post in posts %}
+    {{ post.title }}
+    {{ post.image }}
+    {{ post.text }}
+{% endfor %}
+{% endblock %}
