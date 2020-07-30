@@ -5,5 +5,7 @@
     {{ post.title }}
     <img src="{{ post.image.url}}" alt="">
     {{ post.text }}
+    {{ post.date_create }}
+    {{ post.date_modify }}
 {% endfor %}
 {% endblock %}
