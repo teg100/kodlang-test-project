@@ -3,7 +3,7 @@
 {% block content %}
 {% for post in posts %}
     {{ post.title }}
-    {{ post.image }}
+    <img src="{{ post.image.url}}" alt="">
     {{ post.text }}
 {% endfor %}
 {% endblock %}
