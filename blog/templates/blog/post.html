@@ -3,5 +3,9 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-
+    <a href="{{post.get_absolute_url}}"></a>{{ post.title }}
+    <img src="{{ post.image.url}}" alt="">
+    {{ post.text }}
+    {{ post.date_create }}
+    {{ post.date_modify }}
 {% endblock %}

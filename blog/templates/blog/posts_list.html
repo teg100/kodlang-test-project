@@ -2,8 +2,7 @@
 
 {% block content %}
 {% for post in posts %}
-    {{ post.title }}
-    <img src="{{ post.image.url}}" alt="">
+    <a href="{{post.get_absolute_url}}">{{ post.title }}</a>
     {{ post.text }}
     {{ post.date_create }}
     {{ post.date_modify }}
