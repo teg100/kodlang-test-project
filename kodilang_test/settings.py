@@ -110,7 +110,9 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_L10N = True
+USE_L10N = False
+LANGUAGE_CODE = 'ru-RU'
+DATETIME_FORMAT = 'd E Y H:s'
 
 USE_TZ = True
 

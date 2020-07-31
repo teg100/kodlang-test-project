@@ -9,16 +9,19 @@
     <title>Блог</title>
 </head>
 <body>
-<header>
-    <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo"><img src="{% static 'img/Logo_Kodland.png' %}" alt=""> Блог</a>
+    <nav class="my-navbar valign-wrappe">
+    <div class="nav-wrapper my-wrapper ">
+        <div class="sub-wrapper">
+            <div class="logo-back center-align">
+           <img src="{% static 'img/Logo_Kodland.png' %}" alt="" class="logo">
+      </div>
+      <div class="app-name">Блог</div>
+        </div>
       <ul class="right hide-on-med-and-down">
-        <li><a class="waves-effect waves-light btn" href="{% url 'post_create_url' %}">+ Добавить статью</a></li>
+        <li><a class="my-btn add-button" href="{% url 'post_create_url' %}">+ Добавить статью</a></li>
       </ul>
     </div>
   </nav>
-</header>
 
 {% block content %}
 {% endblock %}

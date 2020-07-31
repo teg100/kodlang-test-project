@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'Circe Rounded';
+    src: local('Circe Rounded Regular'), local('Circe-Rounded-Regular'),
+        url('../fonts/CirceRounded-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Museo Cyrl';
+    src: url('../fonts/Museo Cyrl 900.otf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body{
+    position: relative;
+    width: 1440px;
+    height: 1970px;
+}
+nav{
+    position: absolute;
+    width: 1440px;
+    height: 80px;
+    left: 0px;
+    top: 71px;
+    }
+nav.my-navbar{
+
+    width: 1440px;
+    height: 80px;
+    background-color: #ffffff ;
+}
+.sub-wrapper{
+    display: inline-block;
+    position: relative;
+    height: 80px;
+    width: 300px;
+}
+.logo-back
+{
+    display: inline-block;
+    position: absolute;
+    left: 90px;
+    width: 189.26px;
+    height: 72px;
+    top: 50%;
+    margin-top: -30px;
+}
+.app-name{
+    position: absolute;
+    display: inline-block;
+    width: 46px;
+    height: 28px;
+    left: 269px;
+    font-family: Circe Rounded;
+    font-size: 22px;
+    line-height: 26px;
+    top: 50%;
+    margin-top: -14px;
+
+color: #010101;
+}
+a.my-btn{
+    background: #315AF2;
+    border-radius: 6px;
+}
+.my-btn:hover{
+    background: rgba(49, 90, 242, 0.75) !important;
+}
+a.add-button {
+    padding: 6px 16px;
+    position: absolute;
+    width: 166px;
+    height: 32px;
+    left: 1154px;
+    top: 50%;
+    margin-top: -18px !important;
+    font-family: Circe Rounded;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+div.left-part{
+    width: 672px;
+    height: 338px;
+}
+.new-label{
+    font-family: Circe Rounded;
+    position: absolute;
+    width: 37px;
+    height: 20px;
+    left: 120px;
+    top: 191px;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.416667px;
+    color: #E9399C;
+}
+.title-last-article{
+    position: absolute;
+    width: 672px;
+    height: 112px;
+    left: 120px;
+    top: 221px;
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 128%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.416667px;
+    color: #315AF2;
+}
+.post-text{
+    position: absolute;
+    width: 391px;
+    height: 108px;
+    left: 120px;
+    top: 343px;
+    font-family: Circe Rounded;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 136%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.416667px;
+    color: #000000;
+}
+a.read-btn{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 18px;
+
+    position: absolute;
+    width: 150px;
+    height: 58px;
+    left: 120px;
+    top: 471px;
+
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.416667px;
+    color: #FFFFFF;
+}
+.last-post-img{
+    position: absolute;
+    width: 464px;
+    height: 422px;
+    left: 796px;
+    top: 189px;
+}
+.my-hr{
+    position: absolute;
+    width: 1440px;
+    height: 0px;
+    left: 0px;
+    top: 591px;
+    margin: 0;
+    border: 2px solid #CDCDCD;
+}
+div.my-container{
+    position: absolute;
+    width: 1210px;
+    height: 1034px;
+    left: 119px;
+    top: 651px;
+}
+.other-articles{
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.416667px;
+    color: #315AF2;
+    margin-bottom: 32px;
+}
+.row .col.s4 {
+    margin: 0;
+    padding: 0;
+}
+.my-card{
+    width: 335px;
+    height: 300px;
+    display: inline-block;
+    margin-bottom: 32px;
+    margin-right: 98px;
+    border: 2px solid #CDCDCD;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.unmargined-card{
+    margin-right: 0px;
+
+}
+.my-card img{
+    position: relative;
+    top:20px;
+    left: 62px;
+    width: 217px;
+    height: 112px;
+    /*margin: 20px 56px 168px 62px;*/
+}
+.my-card .card-date{
+    position: relative;
+    width: 98px;
+    height: 20px;
+    left: 20px;
+    top: 20px;
+    font-family: Circe Rounded;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.416667px;
+    color: #979797;
+}
+.post-title{
+    position: relative;
+    width: 248px;
+    height: 87px;
+    left: 43px;
+    top: 35px;
+    font-family: Circe Rounded;
+    font-size: 24px;
+    line-height: 120%;
+    display: table-cell;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.416667px;
+    color: #315AF2;
+}
