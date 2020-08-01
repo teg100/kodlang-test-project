@@ -426,12 +426,35 @@ color: #FFFFFF;
     align-self: flex-start;
     margin: 0px 20px;
 }
-.post-img-page{
+.post-div-img-page{
     position: absolute;
     width: 607px;
     height: 320px;
     left: 417px;
     top: 307px;
-    background: #34888D;
+    background: #ffffff;
     border-radius: 12px;
 }
+.post-img-page{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.post-text-page{
+    position: absolute;
+    width: 540px;
+    height: 220px;
+    left: 417px;
+    top: 722px;
+    font-family: Circe Rounded;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 128%;
+    color: #404040;
+    flex: none;
+    order: 4;
+    align-self: flex-start;
+    margin: 0px 24px;
+    }

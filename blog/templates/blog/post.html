@@ -1,11 +1,32 @@
-
-
-{% extends 'blog/base.html' %}
-
-{% block content %}
-    <a href="{{post.get_absolute_url}}"></a>{{ post.title }}
-    <img src="{{ post.image.url}}" alt="">
-    {{ post.text }}
-    {{ post.date_create }}
-    {{ post.date_modify }}
-{% endblock %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+         <link rel="stylesheet"  href="{% static 'css/styles.css' %}"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <title>Блог</title>
+    </head>
+    <body class="post-body">
+        <nav class="my-navbar h-102">
+        <div class="nav-wrapper my-wrapper h-102 valign-wrapper">
+            <div class="sub-wrapper valign-wrapper">
+                <div class="logo-back center-align">
+                    <img src="{% static 'img/Logo_Kodland.png' %}" alt="" class="logo">
+                </div>
+                <div class="app-name">Блог</div>
+            </div>
+          <ul class="right hide-on-med-and-down">
+            <li><a class="my-btn add-button" href="{% url 'post_create_url' %}">+ Добавить статью</a></li>
+          </ul>
+        </div>
+      </nav>
+     <h4 class="post-title-page"> {{ post.title }}</h4>
+    <div class="post-div-img-page">
+        <img src="{{ post.image.url}}" alt="{{ post.title }}" class="post-img-page">
+    </div>
+    <div class="post-text-page">
+        {{ post.text }}
+    </div>
+    </body>
+</html>
