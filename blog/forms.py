@@ -9,6 +9,7 @@ class PostCreateForm(ModelForm):
         exclude = ()
         widgets = {
             'title': forms.TextInput(attrs={"class": 'input-post-title',
-                                            'placeholder': 'Введите название статьи'}),
+                                            'placeholder': 'Введите название статьи',
+                                            "autocomplete": "off"}),
             'image': forms.FileInput(attrs={"id": 'img'})
         }

@@ -7,7 +7,7 @@
             {{ last_post.title}}
         </h4>
         <p class="post-text">
-            {{ last_post.text }}
+            {{ last_post.text|truncatechars:173 }}
         </p>
     </div>
     <div class="right img-last-post">
@@ -29,7 +29,9 @@
                             <div class="my-card ">
                         {% endif %}
                             <span class="card-date">{{ post.date_create}}</span>
-                            <img src="{{ post.image.url}}" alt="{{ post.title }}">
+                            <div class="">
+                                <img src="{{ post.image.url}}" alt="{{ post.title }}" class="post-img-page">
+                            </div>
                             <div class="card-content">
                                 <h5 class="post-title">{{ post.title|truncatewords:6}}</h5>
                             </div>
@@ -38,7 +40,6 @@
                 {% endfor %}
                 </div>
             {% else %}
-                <h3>Post</h3>
                 <p>No post found!!! :(</p>
             {% endif %}
     </div>
