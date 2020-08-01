@@ -270,6 +270,8 @@ div.my-container{
     text-align: center;
     padding-left: 13px;
     color: #FFFFFF;
+    border: 0;
+    cursor: pointer;
 }
 #id_title {
     position: absolute;
@@ -286,7 +288,9 @@ div.my-container{
     font-size: 24px;
     line-height: 31px;
 }
-
+#id_title:focus{
+    box-shadow: none;
+}
 #id_title::-webkit-input-placeholder {
     font-family: Circe Rounded;
     font-size: 24px;
