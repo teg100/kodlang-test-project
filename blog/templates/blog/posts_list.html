@@ -22,6 +22,7 @@
             </div>
             {% if posts %}
                 {% for post in posts%}
+                    <a href="{{ post.get_absolute_url }}">
                         {% if forloop.counter|divisibleby:3 %}
                             <div class="my-card unmargined-card">
                         {% else %}
@@ -30,9 +31,10 @@
                             <span class="card-date">{{ post.date_create}}</span>
                             <img src="{{ post.image.url}}" alt="{{ post.title }}">
                             <div class="card-content">
-                                <a href="{{ post.get_absolute_url }}" class="post-title">{{ post.title|truncatewords:6}}</a>
+                                <h5 class="post-title">{{ post.title|truncatewords:6}}</h5>
                             </div>
                         </div>
+                    </a>
                 {% endfor %}
                 </div>
             {% else %}
