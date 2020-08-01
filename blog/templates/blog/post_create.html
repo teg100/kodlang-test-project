@@ -1,10 +1,31 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <h1>Create Post Page</h1>
+    <h4 class="add-article">Добавить статью</h4>
     <form method="post" enctype="multipart/form-data">
       {% csrf_token %}
-      {{ form.as_p }}
-      <button type="submit">Submit New Post</button>
+        {{ form.title}}
+        {{form.text }}
+        <div id="up-img">
+    {#            <input type="file" id="img"  accept="image/*" name="img"/>#}
+            {{form.image}}
+            <div class="download-title">Загрузить изображение</div>
+            <div>
+                <img id="img-preview" src="default-preview.jpg" hidden/>
+                <br />
+                <a href="#" id="reset-img-preview" class="rounded-x" hidden>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" fill="#E5E5E5"/>
+                        <line x1="16.9498" y1="7.05025" x2="7.05029" y2="16.9497" stroke="white" stroke-width="2"/>
+                        <line x1="16.9496" y1="16.9497" x2="7.05014" y2="7.05023" stroke="white" stroke-width="2"/>
+                    </svg>
+                </a>
+            </div>
+            <label for="img" class="download-btn">
+                  <span class="js-fileName">Файл</span>
+            </label>
+        </div>
+{#        <a id="btn-pub" type="submit">Опубликовать</a>#}
+      <button type="submit" id="btn-pub">Опубликовать</button>
     </form>
 {% endblock %}

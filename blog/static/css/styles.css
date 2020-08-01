@@ -242,3 +242,159 @@ div.my-container{
     letter-spacing: -0.416667px;
     color: #315AF2;
 }
+.add-article{
+    position: absolute;
+    width: 435px;
+    height: 52px;
+    left: 118px;
+    top: 210px;
+    font-family: Museo Cyrl;
+    font-size: 45px;
+    line-height: 52px;
+    letter-spacing: -0.416667px;
+    color: #315AF2;
+}
+#btn-pub{
+    position: absolute;
+    width: 159px;
+    height: 50px;
+    left: 1014px;
+    top: 306px;
+    background: #E9399C;
+    border-radius: 3px;
+    font-family: Museo Cyrl;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 13px;
+    color: #FFFFFF;
+}
+#id_title {
+    position: absolute;
+    width: 862px;
+    height: 48px;
+    left: 120px;
+    top: 306px;
+    background: #FFFFFF;
+    border: 2px solid #CDCDCD;
+    border-radius: 3px;
+    padding-left: 19px;
+    font-family: Museo Cyrl;
+    color: #315AF2;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+#id_title::-webkit-input-placeholder {
+    font-family: Circe Rounded;
+    font-size: 24px;
+    line-height: 52px;
+    letter-spacing: -0.416667px;
+    color: #C4C4C4;
+
+}
+#id_title::-moz-placeholder  {
+   font-family: Circe Rounded;
+    font-size: 24px;
+    line-height: 52px;
+    letter-spacing: -0.416667px;
+    color: #C4C4C4;
+
+}
+#id_title:-moz-placeholder {
+    font-family: Circe Rounded;
+    font-size: 24px;
+    line-height: 52px;
+    letter-spacing: -0.416667px;
+    color: #C4C4C4;
+}
+#id_title:-ms-input-placeholder {
+    font-family: Circe Rounded;
+    font-size: 24px;
+    line-height: 52px;
+    letter-spacing: -0.416667px;
+    color: #C4C4C4;
+}
+
+#id_text {
+    position: absolute;
+    width: 881px;
+    height: 478px;
+    left: 120px;
+    top: 391px;
+    background: #FFFFFF;
+    border: 2px solid #CDCDCD;
+    box-sizing: border-box;
+    border-radius: 3px;
+    resize: none;
+}
+
+#up-img{
+    position: absolute;
+    width: 298px;
+    height: 135px;
+    left: 1022px;
+    top: 391px;
+    background: #FFFFFF;
+    border: 2px solid #CDCDCD;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.download-title {
+    position: relative;
+    width: 255px;
+    height: 31px;
+    left: 21px;
+    top: 17px;
+    font-family: Circe Rounded;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: #315AF2;
+}
+.download-btn{
+    position: absolute;
+    width: 155px;
+    height: 50px;
+    left: 72px;
+    top: 59px;
+    background: #315AF2;
+    border-radius: 3px;
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    padding-left: 53px;
+    padding-top: 14px;
+
+
+color: #FFFFFF;
+}
+.rounded-x{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 258px;
+    top: 65px;
+}
+
+#img {
+    width:.1px;
+    height:.1px;
+    opacity:0;
+    overflow:hidden;
+    position:absolute;
+    z-index:-1
+}
+#img-preview{
+    position: absolute;
+    width: 286px;
+    height: 260px;
+    left: 6px;
+    top: 52px;
+    border: 2px solid #E5E5E5;
+    box-sizing: border-box;
+}
