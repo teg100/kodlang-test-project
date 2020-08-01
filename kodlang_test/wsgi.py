@@ -15,5 +15,5 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'kodlang_test.settings')
 
 application = get_wsgi_application()
 
-from whitenoise.django import DjangoWhiteNoise
-application = DjangoWhiteNoise(application)
+from whitenoise import WhiteNoise
+application = WhiteNoise(application)
