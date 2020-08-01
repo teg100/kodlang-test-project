@@ -17,12 +17,15 @@ body{
     width: 1440px;
     height: 1970px;
 }
+.post-body{
+    background: #E5E5E5;
+}
 nav{
     position: absolute;
     width: 1440px;
     height: 80px;
     left: 0px;
-    top: 71px;
+    top: 0px;
     }
 nav.my-navbar{
 
@@ -45,6 +48,9 @@ nav.my-navbar{
     height: 72px;
     top: 50%;
     margin-top: -30px;
+}
+.h-102{
+    height: 102px !important;
 }
 .app-name{
     position: absolute;
@@ -91,7 +97,7 @@ div.left-part{
     width: 37px;
     height: 20px;
     left: 120px;
-    top: 191px;
+    top: 120px;
     font-size: 16px;
     line-height: 20px;
     display: flex;
@@ -104,7 +110,7 @@ div.left-part{
     width: 672px;
     height: 112px;
     left: 120px;
-    top: 221px;
+    top: 150px;
     font-family: Museo Cyrl;
     font-style: normal;
     font-weight: bold;
@@ -120,7 +126,7 @@ div.left-part{
     width: 391px;
     height: 108px;
     left: 120px;
-    top: 343px;
+    top: 271px;
     font-family: Circe Rounded;
     font-style: normal;
     font-weight: normal;
@@ -140,7 +146,7 @@ a.read-btn{
     width: 150px;
     height: 58px;
     left: 120px;
-    top: 471px;
+    top: 400px;
 
     font-family: Museo Cyrl;
     font-style: normal;
@@ -157,14 +163,14 @@ a.read-btn{
     width: 464px;
     height: 422px;
     left: 796px;
-    top: 189px;
+    top: 118px;
 }
 .my-hr{
     position: absolute;
     width: 1440px;
     height: 0px;
     left: 0px;
-    top: 591px;
+    top: 520px;
     margin: 0;
     border: 2px solid #CDCDCD;
 }
@@ -173,7 +179,7 @@ div.my-container{
     width: 1210px;
     height: 1034px;
     left: 119px;
-    top: 651px;
+    top: 580px;
 }
 .other-articles{
     font-family: Museo Cyrl;
@@ -247,7 +253,7 @@ div.my-container{
     width: 435px;
     height: 52px;
     left: 118px;
-    top: 210px;
+    top: 139px;
     font-family: Museo Cyrl;
     font-size: 45px;
     line-height: 52px;
@@ -259,7 +265,7 @@ div.my-container{
     width: 159px;
     height: 50px;
     left: 1014px;
-    top: 306px;
+    top: 235px;
     background: #E9399C;
     border-radius: 3px;
     font-family: Museo Cyrl;
@@ -278,7 +284,7 @@ div.my-container{
     width: 862px;
     height: 48px;
     left: 120px;
-    top: 306px;
+    top: 235px;
     background: #FFFFFF;
     border: 2px solid #CDCDCD;
     border-radius: 3px;
@@ -327,7 +333,7 @@ div.my-container{
     width: 881px;
     height: 478px;
     left: 120px;
-    top: 391px;
+    top: 320px;
     background: #FFFFFF;
     border: 2px solid #CDCDCD;
     box-sizing: border-box;
@@ -340,7 +346,7 @@ div.my-container{
     width: 298px;
     height: 135px;
     left: 1022px;
-    top: 391px;
+    top: 320px;
     background: #FFFFFF;
     border: 2px solid #CDCDCD;
     box-sizing: border-box;
@@ -401,4 +407,31 @@ color: #FFFFFF;
     top: 52px;
     border: 2px solid #E5E5E5;
     box-sizing: border-box;
+}
+.post-title-page{
+    position: absolute;
+    width: 400px;
+    height: 123px;
+    left: 417px;
+    top: 170px;
+    font-family: Museo Cyrl;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 128%;
+    letter-spacing: -0.416667px;
+    color: #315AF2;
+    flex: none;
+    order: 0;
+    align-self: flex-start;
+    margin: 0px 20px;
+}
+.post-img-page{
+    position: absolute;
+    width: 607px;
+    height: 320px;
+    left: 417px;
+    top: 307px;
+    background: #34888D;
+    border-radius: 12px;
 }
