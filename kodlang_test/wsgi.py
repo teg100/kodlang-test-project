@@ -1,5 +1,5 @@
 """
-WSGI config for kodilang_test project.
+WSGI config for kodlang_test project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -12,7 +12,7 @@ import os
 from django.core.wsgi import get_wsgi_application
 from whitenoise import WhiteNoise
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'kodilang_test.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'kodlang_test.settings')
 
 application = get_wsgi_application()
 application = WhiteNoise(application)
